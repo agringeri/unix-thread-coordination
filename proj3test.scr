@@ -1,0 +1,42 @@
+Script started on Mon 03 Oct 2016 12:50:27 AM EDT
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ cat config1.txt
+A 2 1
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ ./graph config1.txt
+Node A computed a value of 2 after 1 seconds.
+Total computation resulted in a value of 2 after 1 seconds.
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ cat config2.txt
+A 1 1
+B 2 1 A
+C 3 1 A
+D 4 1 B C
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ ./graph config2.txt
+Node A computed a value of 1 after 1 seconds.
+Node C computed a value of 3 after 2 seconds.
+Node B computed a value of 2 after 2 seconds.
+Node D computed a value of 4 after 3 seconds.
+Total computation resulted in a value of 10 after 3 seconds.
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ cat config3.txt
+A 1 1
+B 10 2 A
+C 3 2 B
+D 7 1 B
+E 2 1 B
+F 5 2 C D E
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ ./ga[Kraph config3.txt
+Node A computed a value of 1 after 1 seconds.
+Node B computed a value of 10 after 3 seconds.
+Node E computed a value of 2 after 4 seconds.
+Node D computed a value of 7 after 4 seconds.
+Node C computed a value of 3 after 5 seconds.
+Node F computed a value of 5 after 7 seconds.
+Total computation resulted in a value of 28 after 7 seconds.
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ cat cong[Kfig4.txt
+A B 2 3
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ ./graph config4.txt
+Configuration file is not correct format. Exiting.
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ cat config5.txt
+1 A 3
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ ./graph config5.txt
+Configuration file is not correct format. Exiting.
+]0;anthony@anthony-gringeri: ~/Documents/cs3013/project3anthony@anthony-gringeri:~/Documents/cs3013/project3$ exit
+Script done on Mon 03 Oct 2016 12:51:58 AM EDT
